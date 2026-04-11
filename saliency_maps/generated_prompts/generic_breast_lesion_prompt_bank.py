@@ -1,0 +1,158 @@
+# Auto-generated lesion-centric prompt bank for subtype=generic
+
+generic_breast_lesion_prompt_bank = {
+  "bank_name": "generic_breast_lesion_prompt_bank",
+  "subtype": "generic",
+  "modality": "breast_ultrasound",
+  "prompts": [
+    {
+      "id": "generic_lesion_01",
+      "text": "A breast ultrasound image showing a hypoechoic mass with well-defined margins.",
+      "type": "lesion_generic",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "breast lesion",
+        "morphology": null,
+        "location": null
+      }
+    },
+    {
+      "id": "generic_lesion_02",
+      "text": "A breast ultrasound image showing a hypoechoic focal lesion.",
+      "type": "lesion_generic",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "breast lesion",
+        "morphology": null,
+        "location": null
+      }
+    },
+    {
+      "id": "generic_lesion_03",
+      "text": "An ultrasound scan of the breast demonstrating a well-defined mass.",
+      "type": "lesion_generic",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "breast mass",
+        "morphology": null,
+        "location": null
+      }
+    },
+    {
+      "id": "generic_lesion_04",
+      "text": "A breast ultrasound image revealing a focal tumor region with distinct borders.",
+      "type": "lesion_generic",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "tumor region",
+        "morphology": null,
+        "location": null
+      }
+    },
+    {
+      "id": "generic_subtype_01",
+      "text": "A breast ultrasound image demonstrating a hypoechoic breast mass with posterior acoustic enhancement.",
+      "type": "subtype_aware",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "breast mass",
+        "morphology": "posterior enhancement, posterior shadowing",
+        "location": null
+      }
+    },
+    {
+      "id": "generic_subtype_02",
+      "text": "An ultrasound image of the breast showing a focal lesion with microlobulated margins.",
+      "type": "subtype_aware",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "breast lesion",
+        "morphology": null,
+        "location": null
+      }
+    },
+    {
+      "id": "generic_subtype_03",
+      "text": "A breast ultrasound image depicting a tumor region with heterogeneous echotexture.",
+      "type": "subtype_aware",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "tumor region",
+        "morphology": null,
+        "location": null
+      }
+    },
+    {
+      "id": "generic_subtype_04",
+      "text": "A breast ultrasound image showing a focal lesion within the breast parenchyma.",
+      "type": "subtype_aware",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "breast lesion",
+        "morphology": null,
+        "location": null
+      }
+    },
+    {
+      "id": "generic_morph_01",
+      "text": "A breast ultrasound image depicting a tumor region with irregular shape.",
+      "type": "morphology_aware",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "tumor region",
+        "morphology": "irregular shape",
+        "location": null
+      }
+    },
+    {
+      "id": "generic_morph_02",
+      "text": "An ultrasound image of the breast showing a breast lesion with indistinct margins.",
+      "type": "morphology_aware",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "breast lesion",
+        "morphology": null,
+        "location": null
+      }
+    },
+    {
+      "id": "generic_morph_03",
+      "text": "A breast ultrasound image showing a localized solid-appearing mass.",
+      "type": "morphology_aware",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "breast mass",
+        "morphology": "localized, solid",
+        "location": null
+      }
+    },
+    {
+      "id": "generic_morph_04",
+      "text": "An ultrasound scan of the breast with a visible focal hypoechoic lesion.",
+      "type": "morphology_aware",
+      "slots": {
+        "modality": "breast ultrasound",
+        "anatomy": null,
+        "pathology": "breast lesion",
+        "morphology": null,
+        "location": null
+      }
+    }
+  ]
+}
+
+# Convenience accessors
+generic_breast_lesion_prompt_bank_texts = [p['text'] for p in generic_breast_lesion_prompt_bank['prompts']]
+generic_breast_lesion_prompt_bank_pathology_phrases = [p['slots']['pathology'] for p in generic_breast_lesion_prompt_bank['prompts'] if p['slots']['pathology']]
+generic_breast_lesion_prompt_bank_morphology_phrases = [p['slots']['morphology'] for p in generic_breast_lesion_prompt_bank['prompts'] if p['slots']['morphology']]
